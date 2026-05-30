@@ -66,7 +66,7 @@
 
 <body>
 
-  <div id="scanText">scan pages…</div>
+  <div id="scanText">seite scannen…</div>
 
   <a-scene
     mindar-image="imageTargetSrc: assets/targets/targets.mind; uiScanning: yes; uiLoading: yes; filterMinCF: 0.001; filterBeta: 0.01;"
@@ -163,7 +163,7 @@
         let frozen = false;
 
         el.addEventListener("targetFound", () => {
-          setScanText("Veil detected // tap to activate reality overlay");
+          setScanText("schleier erkannt // zum deaktivieren tippen");
           pendingVideo = video;
           frozen = true;
           clearTimeout(freezeTimeout);
